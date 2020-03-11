@@ -1,5 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react'
-import {Text, StyleSheet, View, TouchableOpacity, Image} from 'react-native'
+import {Text, StyleSheet, View, TouchableOpacity} from 'react-native'
+import {primaryColor} from '../theme'
 
 import {CTX} from '../tools/context'
 
@@ -16,9 +17,11 @@ export default function ProfileScreen() {
 
 	return (
 		<View style={styles.container}>
-			<TouchableOpacity onPress={_onLogout}>
-				<Text>Log out</Text>
-			</TouchableOpacity>
+			<View style={styles.form}>
+				<TouchableOpacity style={styles.button} onPress={_onLogout}>
+					<Text style={styles.buttonText}>Log out</Text>
+				</TouchableOpacity>
+			</View>
 		</View>
 	)
 }
@@ -26,53 +29,22 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		justifyContent: 'center'
+	},
+	form: {
+		marginBottom: 48,
+		marginHorizontal: 30
+	},
+	button: {
+		marginHorizontal: 30,
+		backgroundColor: primaryColor,
+		borderRadius: 4,
+		height: 52,
 		alignItems: 'center',
-		justifyContent: 'center',
-		backgroundColor: '#fff'
+		justifyContent: 'center'
 	},
-	avatarContainer: {
-		shadowColor: '#151734',
-		shadowRadius: 30,
-		shadowOpacity: 0.4
-	},
-	avatarPlaceholder: {
-		width: 100,
-		height: 100,
-		backgroundColor: '#E1E2E6',
-		borderRadius: 50,
-		marginTop: 48,
-		justifyContent: 'center',
-		alignItems: 'center'
-	},
-	avatar: {
-		position: 'absolute',
-		width: 100,
-		height: 100,
-		borderRadius: 50
-	},
-	name: {
-		marginTop: 24,
-		fontSize: 16,
-		fontWeight: '600'
-	},
-	statsContainer: {
-		flexDirection: 'row',
-		justifyContent: 'space-between',
-		margin: 32
-	},
-	stat: {
-		alignItems: 'center',
-		flex: 1
-	},
-	statAmount: {
-		color: '#4F566D',
-		fontSize: 18,
-		fontWeight: '300'
-	},
-	statTitle: {
-		color: '#C3C5CD',
-		fontSize: 12,
-		fontWeight: '500',
-		marginTop: 4
+	buttonText: {
+		color: '#fff',
+		fontWeight: '500'
 	}
 })

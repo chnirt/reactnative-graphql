@@ -1,5 +1,6 @@
 package com.chnirtnavigation5;
 
+import com.reactlibrary.RNMomosdkPackage;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;

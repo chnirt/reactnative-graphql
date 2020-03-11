@@ -6,10 +6,12 @@
  */
 
 #import "AppDelegate.h"
+#import "RNMomosdk.h"
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+
 
 @implementation AppDelegate
 
@@ -37,6 +39,12 @@
 #else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
+}
+
+/*iOS 9 or newest*/
+-(BOOL)application:(UIApplication *)app openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+  [RNMomosdk handleOpenUrl:url];
+  return YES;
 }
 
 @end
