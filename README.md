@@ -42,7 +42,7 @@
 
 - https://htmlcolorcodes.com/color-names/
 
-7. Intergate with Apollo graphql (@apollo/react-hooks, apollo-link)
+7. Integrate with Apollo graphql (@apollo/react-hooks, apollo-link)
 
 - https://www.apollographql.com/docs/react/integrations/react-native/#gatsby-focus-wrapper
 - https://www.apollographql.com/docs/react/api/react-hooks/#gatsby-focus-wrapper
@@ -52,7 +52,7 @@
 
 - https://jaredpalmer.com/formik/docs/guides/validation
 
-9. SAP Mobile Design
+9. SAP mobile design
 
 - https://blogs.sap.com/2018/05/25/labs-preview-sap-business-bydesign-plans-new-mobile-apps-for-smartphones/
 
@@ -77,15 +77,15 @@
 
 - https://itnext.io/react-native-tab-bar-is-customizable-c3c37dcf711f
 
-15. Logo App
+15. Logo app
 
 - https://dribbble.com/shots/6365319-s-chat-bubbles-logo
 
-16. Disable Rotate
+16. Disable rotate
 
 - https://aboutreact.com/react-native-disable-screen-rotation/
 
-17. Image from
+17. Images from
 
 - https://dribbble.com/search/red%20gif
 
@@ -93,11 +93,11 @@
 
 - https://github.com/react-native-community/react-native-permissions
 
-19. Image Picker
+19. Image picker
 
 - https://github.com/react-native-community/react-native-image-picker
 
-20. Image Gif not fire Android
+20. Image gif not fire Android
 
 - https://stackoverflow.com/questions/57089042/react-native-0-60-0-0-60-x-android-for-animated-gif-support
 
@@ -117,11 +117,11 @@
 
 - https://medium.com/firebase-developers/should-i-query-my-firebase-database-directly-or-use-cloud-functions-fbb3cd14118c
 
-25. Image Illustrations
+25. Image illustrations
 
 - https://undraw.co/illustrations
 
-26. Vector Icons
+26. Vector icons
 
 - https://feathericons.com/?query=time
 
@@ -129,3 +129,33 @@
 
 - https://developers.momo.vn/#/docs/app_in_app
 - https://github.com/momo-wallet/mobile-sdk/tree/master/react-native
+- https://developers.momo.vn/docs/test/MoMo-Testcase-App-in-App.pdf
+- https://developers.momo.vn/#/docs/testing_information
+
+28. Optional chaining
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+
+29. Pinterest mobile
+
+- https://www.pinterest.com/pin/134474738861085918/
+
+30. FBSDK
+
+- https://codeburst.io/react-native-vs-real-native-apps-ad890986f1f
+
+31. Migrate Firebase v6
+
+- https://invertase.io/oss/react-native-firebase/migrating-to-v6
+
+32. Best Practice
+
+- https://www.awesome-react-native.com/#Components-UI
+
+33. Create fb application
+
+- https://magefan.com/blog/create-facebook-application
+
+34. Sdk not found
+
+- https://stackoverflow.com/questions/32634352/react-native-android-build-failed-sdk-location-not-found

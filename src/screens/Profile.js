@@ -17,11 +17,9 @@ export default function ProfileScreen() {
 
 	return (
 		<View style={styles.container}>
-			<View style={styles.form}>
-				<TouchableOpacity style={styles.button} onPress={_onLogout}>
-					<Text style={styles.buttonText}>Log out</Text>
-				</TouchableOpacity>
-			</View>
+			<TouchableOpacity style={styles.button} onPress={_onLogout}>
+				<Text style={styles.buttonText}>Log out</Text>
+			</TouchableOpacity>
 		</View>
 	)
 }
@@ -30,10 +28,6 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		justifyContent: 'center'
-	},
-	form: {
-		marginBottom: 48,
-		marginHorizontal: 30
 	},
 	button: {
 		marginHorizontal: 30,

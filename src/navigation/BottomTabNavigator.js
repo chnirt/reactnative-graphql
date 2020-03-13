@@ -14,7 +14,7 @@ const Tab = createBottomTabNavigator()
 export default function BottomTabNavigator(props) {
 	return (
 		<Tab.Navigator
-			initialRouteName={HOME}
+			initialRouteName={MESSAGE}
 			tabBarOptions={{
 				activeTintColor: '#161F3D',
 				showLabel: false

@@ -31,23 +31,23 @@ export default function LoginScreen() {
 	function _onLogin(values) {
 		const {username, password} = values
 
-		login({
-			variables: {
-				input: {
-					username,
-					password
-				}
-			}
-		})
-			.then(res => {
-				const {accessToken} = res.data.login
-				console.log('3', accessToken)
-				_authenticate(accessToken)
-			})
-			.catch(err => {
-				console.log('4')
-				setErrorMessage(err.message)
-			})
+		_authenticate(username + password)
+
+		// login({
+		// 	variables: {
+		// 		input: {
+		// 			username,
+		// 			password
+		// 		}
+		// 	}
+		// })
+		// 	.then(res => {
+		// 		const {accessToken} = res.data.login
+		// 		_authenticate(accessToken)
+		// 	})
+		// 	.catch(err => {
+		// 		setErrorMessage(err.message)
+		// 	})
 	}
 
 	function _navigateForgot() {

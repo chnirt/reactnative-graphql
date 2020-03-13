@@ -38,9 +38,6 @@ target 'chnirtnavigation5' do
 
   pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary.podspec"
 
-  pod 'RNMomosdk', :path => '../node_modules/react-native-momosdk'
-  pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
-
   target 'chnirtnavigation5Tests' do
     inherit! :search_paths
     # Pods for testing
