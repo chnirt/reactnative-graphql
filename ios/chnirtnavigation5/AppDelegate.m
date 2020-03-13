@@ -6,12 +6,13 @@
  */
 
 #import "AppDelegate.h"
-#import "RNMomosdk.h"
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+// #import "RNMomosdk.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @implementation AppDelegate
 
@@ -41,10 +42,28 @@
 #endif
 }
 
-/*iOS 9 or newest*/
--(BOOL)application:(UIApplication *)app openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
-  [RNMomosdk handleOpenUrl:url];
-  return YES;
+// /*iOS 9 or newest*/
+// -(BOOL)application:(UIApplication *)app openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+//   [RNMomosdk handleOpenUrl:url];
+//   return YES;
+// }
+
+// /*iOS 8 or lower*/
+// -(BOOL)application:(UIApplication *)application
+//              openURL:(NSURL *)url
+//    sourceApplication:(NSString *)sourceApplication
+//           annotation:(id)annotation;{
+//   [RNMomosdk handleOpenUrl:url];
+//   return YES;
+// }
+
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+  return [[FBSDKApplicationDelegate sharedInstance]application:app
+                                                       openURL:url
+                                                       options:options];
 }
 
 @end
